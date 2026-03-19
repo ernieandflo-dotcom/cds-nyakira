@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDS Nyakira · Centre de Santé à Kanyosha, Bujumbura</title>
+  <meta name="description" content="CDS Nyakira est votre centre de santé à Kanyosha, Bujumbura. Consultations, laboratoire, maternité, pharmacie et plus — des soins humains et accessibles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <i class="fas fa-clinic-medical"></i>
+        <span>CDS Nyakira <small>ivuriro ryanyu</small></span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="lang-selector" id="langSelector">
+        <span class="lang-item active" data-lang="fr">FR</span>
+        <span class="lang-item" data-lang="rn">RN</span>
+        <span class="lang-item" data-lang="en">EN</span>
+        <span class="lang-item" data-lang="sw">SW</span>
+        <span class="lang-item" data-lang="zh">中文</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" style="background-image: url('assets/banderole.jpeg');">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-subhead">
+            <i class="fas fa-heart"></i>
+            <span data-i18n="hero.location">Kanyosha, Bujumbura · Burundi</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="hero-kirundi" data-i18n="hero.kirundi">Ni ivuriro ryanyu</span>
+            <span data-i18n="hero.title">Votre santé,<br>notre priorité.</span>
+          </h1>
+          <p class="hero-text" data-i18n="hero.text">
+            À la clinique CDS Nyakira, nous offrons des soins médicaux de qualité avec compassion et humanité. Située à Kanyosha, nous proposons des services variés : consultations, laboratoire, maternité, petite chirurgie et bien plus.
+          </p>
+          <div class="btn-group">
+            <a href="https://wa.me/25776869000" class="btn btn-primary" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>
+              <span data-i18n="hero.cta.whatsapp">WhatsApp · 76 86 90 00</span>
+            </a>
+            <a href="services.html" class="btn btn-outline">
+              <i class="fas fa-calendar-check"></i>
+              <span data-i18n="hero.cta.services">Nos services</span>
+            </a>
+          </div>
+          <div class="badge-group">
+            <span class="badge-impact"><i class="fas fa-globe"></i> GlobalGiving · 2023</span>
+            <span class="badge-impact"><i class="fas fa-tooth"></i> BuDental Mission · 2024</span>
+            <span class="badge-impact"><i class="fas fa-seedling"></i> Beauty Out of Dust · 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="container services-section">
+      <h2 class="section-title" data-i18n="services.title">Nos services · ibikorwa</h2>
+      <p class="section-sub" data-i18n="services.sub">Soins complets, proches de vous, avec un cœur aimant.</p>
+      <div class="card-grid">
+        <div class="service-card">
+          <i class="fas fa-stethoscope"></i>
+          <h3 data-i18n="service.consult">Consultation</h3>
+          <p data-i18n="service.consult.sub">Générale &amp; spécialisée</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-flask"></i>
+          <h3 data-i18n="service.labo">Laboratoire</h3>
+          <p data-i18n="service.labo.sub">Analyses fiables</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cut"></i>
+          <h3 data-i18n="service.chir">Petite chirurgie</h3>
+          <p data-i18n="service.chir.sub">Soins &amp; actes mineurs</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-baby"></i>
+          <h3 data-i18n="service.matern">Maternité</h3>
+          <p data-i18n="service.matern.sub">Accouchement &amp; suivi</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-file-medical"></i>
+          <h3 data-i18n="service.cpn">CPN-CPON-PF</h3>
+          <p data-i18n="service.cpn.sub">Planning familial</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-pills"></i>
+          <h3 data-i18n="service.pharma">Pharmacie</h3>
+          <p data-i18n="service.pharma.sub">Médicaments essentiels</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARTNERS ===== -->
+    <section class="container partners-section">
+      <h2 class="section-title" data-i18n="partners.title">Ils nous soutiennent · abafasha</h2>
+      <div class="partner-logos">
+        <div class="partner-item">
+          <i class="fas fa-globe"></i>
+          <span>GlobalGiving</span>
+        </div>
+        <div class="partner-item">
+          <i class="fas fa-tooth"></i>
+          <span>BuDental Mission (B.M.A)</span>
+        </div>
+        <div class="partner-item">
+          <i class="fas fa-spa"></i>
+          <span>Beauty Out of Dust</span>
+        </div>
+        <div class="partner-item">
+          <i class="fas fa-university"></i>
+          <span>Texas A&amp;M Dentistry</span>
+        </div>
+      </div>
+      <div class="impact-statement">
+        <p>⭐ <strong>133 patients</strong> traités lors de la mission dentaire 2024 · éducation à l'hygiène · dons de brosses à dents et dentifrice.</p>
+        <p><em>« Medical debt relief »</em> grâce à GlobalGiving : <strong>$1,962 (CAD)</strong> collectés pour alléger les dettes médicales des familles les plus vulnérables.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT BAND ===== -->
+    <section class="container">
+      <div class="contact-band">
+        <div class="contact-info">
+          <h3><i class="fas fa-phone-alt"></i> Contact · umuhamagaro</h3>
+          <p class="contact-phone"><i class="fab fa-whatsapp"></i> Tél./WhatsApp : 76 86 90 00 · 61 98 55 24</p>
+          <p class="contact-email">
+            <i class="far fa-envelope"></i> cdsnyakira@gmail.com
+            <span class="separator">·</span>
+            <i class="fas fa-globe"></i> sept-bdi.org
+          </p>
+        </div>
+        <div class="contact-highlight">
+          <i class="fab fa-whatsapp"></i> 76 86 90 00
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT CARDS ===== -->
+    <section class="container about-section">
+      <div class="about-grid">
+        <div class="about-card compassion">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h3>Ubuntu · clémence</h3>
+          <p>Les patients peuvent recevoir des soins et bénéficier d'un allègement ou d'une remise de dette médicale en cas de difficultés financières démontrées.</p>
+          <p class="source">– GlobalGiving, 2023</p>
+          <p class="description">Notre clinique rurale à Kanyosha est l'une des rares à proposer cette flexibilité financière et cette solidarité humaine.</p>
+        </div>
+        <div class="about-card location">
+          <i class="fas fa-map-pin"></i>
+          <h3>Kanyosha · Bujumbura</h3>
+          <p>Au cœur de la commune, proche de la population. CDS Nyakira, <em>ivuriro ryanyu</em> — votre clinique, fondée en 2022.</p>
+          <p class="partners-note">
+            <i class="fas fa-check-circle"></i> Partenaire de missions dentaires internationales
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2026 CDS Nyakira · Centre de Santé de Kanyosha</div>
+      <div class="footer-links">
+        <a href="https://wa.me/25776869000" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:cdsnyakira@gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="https://sept-bdi.org" target="_blank" rel="noopener">sept-bdi.org</a>
+      </div>
+      <div class="footer-motto">Tubakirana umutima w'urukundo</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

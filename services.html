@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDS Nyakira · Nos Services de Santé à Kanyosha</title>
+  <meta name="description" content="Découvrez les services médicaux de CDS Nyakira : consultations, laboratoire, maternité, petite chirurgie, planning familial et pharmacie à Kanyosha.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <i class="fas fa-clinic-medical"></i>
+        <span>CDS Nyakira <small>ivuriro ryanyu</small></span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="lang-selector" id="langSelector">
+        <span class="lang-item active" data-lang="fr">FR</span>
+        <span class="lang-item" data-lang="rn">RN</span>
+        <span class="lang-item" data-lang="en">EN</span>
+        <span class="lang-item" data-lang="sw">SW</span>
+        <span class="lang-item" data-lang="zh">中文</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header" style="background-image: url('assets/consulation002.jpeg');">
+      <div class="page-header-overlay"></div>
+      <div class="container page-header-content">
+        <h1 class="page-title" data-i18n="servicesPage.title">Nos Services de Santé</h1>
+        <p class="page-subtitle" data-i18n="servicesPage.sub">Des soins complets, accessibles et humains pour toute la famille</p>
+      </div>
+    </section>
+
+    <!-- ===== INTRO ===== -->
+    <section class="services-intro">
+      <div class="container">
+        <p class="intro-text" data-i18n="servicesPage.intro">
+          À CDS Nyakira, nous nous engageons à offrir des soins de qualité adaptés à vos besoins. 
+          Découvrez nos services ci-dessous, conçus pour vous accompagner dans votre bien-être au quotidien.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES DÉTAILLÉS ===== -->
+    <section class="services-detailed">
+      <div class="container">
+
+        <!-- Consultation -->
+        <div class="service-detailed-card">
+          <div class="service-icon-large">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="service.consult">Consultation</h2>
+            <p data-i18n="service.consult.detail">
+              Nos médecins qualifiés sont disponibles pour vous offrir des consultations personnalisées, que ce soit pour un suivi médical, un diagnostic ou pour toute question de santé. Nous vous écoutons attentivement et vous offrons des solutions adaptées à votre situation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Laboratoire -->
+        <div class="service-detailed-card">
+          <div class="service-icon-large">
+            <i class="fas fa-flask"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="service.labo">Laboratoire</h2>
+            <p data-i18n="service.labo.detail">
+              Nous disposons d'un laboratoire pour réaliser une série d'examens médicaux afin de mieux comprendre votre état de santé. Nos analyses sont réalisées avec précision et les résultats communiqués dans les meilleurs délais.
+            </p>
+          </div>
+        </div>
+
+        <!-- Petite Chirurgie -->
+        <div class="service-detailed-card">
+          <div class="service-icon-large">
+            <i class="fas fa-cut"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="service.chir">Petite Chirurgie</h2>
+            <p data-i18n="service.chir.detail">
+              Nos équipes offrent des interventions de petite chirurgie, réalisées dans des conditions optimales pour garantir votre sécurité et votre confort. Ces interventions incluent des soins comme l'ablation de kystes, de petites lésions cutanées et autres actes mineurs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Maternité -->
+        <div class="service-detailed-card">
+          <div class="service-icon-large">
+            <i class="fas fa-baby"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="service.matern">Maternité</h2>
+            <p data-i18n="service.matern.detail">
+              Nous accompagnons les futures mamans tout au long de leur grossesse avec des suivis réguliers, des consultations prénatales, et des conseils de santé. Nous offrons un environnement sécurisé et chaleureux pour un accouchement serein et une récupération en toute confiance.
+            </p>
+          </div>
+        </div>
+
+        <!-- CPN-CPON-PF -->
+        <div class="service-detailed-card">
+          <div class="service-icon-large">
+            <i class="fas fa-file-medical"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="service.cpn">CPN · CPON · PF</h2>
+            <p data-i18n="service.cpn.detail">
+              Nous proposons des consultations prénatales (CPN), post-natales (CPON) et de planning familial (PF), offrant des conseils sur les méthodes de contraception, la gestion de la fertilité et la santé reproductive, tout en respectant vos choix et besoins individuels.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pharmacie -->
+        <div class="service-detailed-card">
+          <div class="service-icon-large">
+            <i class="fas fa-pills"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="service.pharma">Pharmacie</h2>
+            <p data-i18n="service.pharma.detail">
+              Notre pharmacie vous propose une gamme de médicaments essentiels et de produits de santé, avec des conseils professionnels pour vous aider à gérer vos traitements et maintenir votre bien-être au quotidien.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT BAND ===== -->
+    <section class="container">
+      <div class="contact-band">
+        <div class="contact-info">
+          <h3><i class="fas fa-phone-alt"></i> Contact · umuhamagaro</h3>
+          <p class="contact-phone"><i class="fab fa-whatsapp"></i> Tél./WhatsApp : 76 86 90 00 · 61 98 55 24</p>
+          <p class="contact-email">
+            <i class="far fa-envelope"></i> cdsnyakira@gmail.com
+            <span class="separator">·</span>
+            <i class="fas fa-globe"></i> sept-bdi.org
+          </p>
+        </div>
+        <div class="contact-highlight">
+          <i class="fab fa-whatsapp"></i> 76 86 90 00
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2026 CDS Nyakira · Centre de Santé de Kanyosha</div>
+      <div class="footer-links">
+        <a href="https://wa.me/25776869000" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:cdsnyakira@gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="https://sept-bdi.org" target="_blank" rel="noopener">sept-bdi.org</a>
+      </div>
+      <div class="footer-motto">Tubakirana umutima w'urukundo</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

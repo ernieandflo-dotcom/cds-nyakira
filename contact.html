@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDS Nyakira · Contact — Kanyosha, Bujumbura</title>
+  <meta name="description" content="Contactez CDS Nyakira par WhatsApp, téléphone ou email. Clinique à Kanyosha, Bujumbura. Tél : 76 86 90 00 · cdsnyakira@gmail.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <i class="fas fa-clinic-medical"></i>
+        <span>CDS Nyakira <small>ivuriro ryanyu</small></span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="lang-selector" id="langSelector">
+        <span class="lang-item active" data-lang="fr">FR</span>
+        <span class="lang-item" data-lang="rn">RN</span>
+        <span class="lang-item" data-lang="en">EN</span>
+        <span class="lang-item" data-lang="sw">SW</span>
+        <span class="lang-item" data-lang="zh">中文</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header" style="background-image: url('assets/accompagnement.jpeg');">
+      <div class="page-header-overlay"></div>
+      <div class="container page-header-content">
+        <h1 class="page-title" data-i18n="contact.title">Nous contacter</h1>
+        <p class="page-subtitle" data-i18n="contact.sub">Umuhamagaro · Appelez-nous ou écrivez-nous, nous sommes là pour vous</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT MAIN ===== -->
+    <section class="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Colonne gauche : coordonnées -->
+          <div class="contact-details-card">
+            <h2 data-i18n="contact.reach">Nous joindre</h2>
+            <p class="subtitle" data-i18n="contact.reach.sub">Ivuriro ryanyu — votre clinique est à votre écoute</p>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-item-text">
+                <h4 data-i18n="contact.phone.label">Téléphone</h4>
+                <p>76 86 90 00</p>
+                <p>61 98 55 24</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="contact-item-text">
+                <h4 data-i18n="contact.email.label">Email</h4>
+                <a href="mailto:cdsnyakira@gmail.com">cdsnyakira@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="contact-item-text">
+                <h4 data-i18n="contact.web.label">Site partenaire</h4>
+                <a href="https://sept-bdi.org" target="_blank" rel="noopener">sept-bdi.org</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-item-text">
+                <h4 data-i18n="contact.address.label">Adresse</h4>
+                <p data-i18n="contact.address">Kanyosha, Commune Rurale<br>Bujumbura, Burundi</p>
+              </div>
+            </div>
+
+            <!-- WhatsApp block -->
+            <div class="whatsapp-block">
+              <a href="https://wa.me/25776869000" class="whatsapp-btn" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="contact.whatsapp.btn">Écrire sur WhatsApp</span>
+              </a>
+              <p class="whatsapp-note" data-i18n="contact.whatsapp.note">
+                Réponse rapide · Disponible en français, kirundi, anglais
+              </p>
+            </div>
+          </div>
+
+          <!-- Colonne droite : formulaire -->
+          <div class="contact-form-card">
+            <h2 data-i18n="contact.form.title">Envoyer un message</h2>
+            <p class="subtitle" data-i18n="contact.form.sub">Nous vous répondrons dans les meilleurs délais</p>
+
+            <div id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName" data-i18n="contact.form.firstName">Prénom</label>
+                  <input type="text" id="firstName" placeholder="Votre prénom" autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label for="lastName" data-i18n="contact.form.lastName">Nom</label>
+                  <input type="text" id="lastName" placeholder="Votre nom" autocomplete="family-name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone" data-i18n="contact.form.phone">Téléphone / WhatsApp</label>
+                <input type="tel" id="phone" placeholder="+257 __ __ __ __" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="subject" data-i18n="contact.form.subject">Objet de la demande</label>
+                <select id="subject">
+                  <option value="" disabled selected data-i18n="contact.form.subject.placeholder">Choisir un objet…</option>
+                  <option value="consult" data-i18n="contact.form.subject.consult">Consultation médicale</option>
+                  <option value="labo" data-i18n="contact.form.subject.labo">Laboratoire / Analyses</option>
+                  <option value="matern" data-i18n="contact.form.subject.matern">Maternité</option>
+                  <option value="pharma" data-i18n="contact.form.subject.pharma">Pharmacie</option>
+                  <option value="info" data-i18n="contact.form.subject.info">Renseignement général</option>
+                  <option value="other" data-i18n="contact.form.subject.other">Autre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact.form.message">Message</label>
+                <textarea id="message" placeholder="Décrivez votre demande…"></textarea>
+              </div>
+              <button type="button" class="form-submit" id="formSubmit">
+                <i class="fas fa-paper-plane"></i>
+                <span data-i18n="contact.form.send">Envoyer le message</span>
+              </button>
+            </div>
+
+            <!-- Confirmation (cachée par défaut) -->
+            <div id="formConfirmation" style="display:none; text-align:center; padding: 40px 20px;">
+              <div style="font-size:3rem; color: var(--green-mid); margin-bottom:16px;">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <h3 style="font-family: var(--font-display); color: var(--green-deep); margin-bottom:8px;">Message envoyé !</h3>
+              <p style="color: var(--text-light); font-size: 0.9rem;">Nous vous contacterons bientôt. Merci de votre confiance.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOCALISATION ===== -->
+    <section class="location-map">
+      <div class="container">
+        <h2 class="section-title" style="margin-bottom: 24px;" data-i18n="contact.location.title">Nous trouver · Kanyosha</h2>
+        <div class="map-embed">
+          <!-- Embed carte Google Maps centrée sur Kanyosha, Bujumbura -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31862.03456153453!2d29.32!3d-3.46!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c182cd0c1b9e29%3A0x7e957c93f4b8e97!2sKanyosha%2C%20Bujumbura!5e0!3m2!1sfr!2sbi!4v1700000000000!5m2!1sfr!2sbi"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="CDS Nyakira — Kanyosha, Bujumbura">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2026 CDS Nyakira · Centre de Santé de Kanyosha</div>
+      <div class="footer-links">
+        <a href="https://wa.me/25776869000" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:cdsnyakira@gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="https://sept-bdi.org" target="_blank" rel="noopener">sept-bdi.org</a>
+      </div>
+      <div class="footer-motto">Tubakirana umutima w'urukundo</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
