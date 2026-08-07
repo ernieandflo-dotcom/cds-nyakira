@@ -10,6 +10,7 @@
   // 1. TRADUCTIONS i18n
   // ===================================================
   const i18n = {
+    // ===== LANGUES ACTIVES (FR / EN) =====
     fr: {
       'hero.location':        'Kanyosha, Bujumbura · Burundi',
       'hero.kirundi':         'Ni ivuriro ryanyu',
@@ -31,6 +32,12 @@
       'service.cpn.sub':      'Planning familial',
       'service.pharma':       'Pharmacie',
       'service.pharma.sub':   'Médicaments essentiels',
+      'service.consult.detail': 'Nos médecins qualifiés sont disponibles pour vous offrir des consultations personnalisées, que ce soit pour un suivi médical, un diagnostic ou pour toute question de santé. Nous vous écoutons attentivement et vous offrons des solutions adaptées à votre situation.',
+      'service.labo.detail':    'Nous disposons d\'un laboratoire pour réaliser une série d\'examens médicaux afin de mieux comprendre votre état de santé. Nos analyses sont réalisées avec précision et les résultats communiqués dans les meilleurs délais.',
+      'service.chir.detail':    'Nos équipes offrent des interventions de petite chirurgie, réalisées dans des conditions optimales pour garantir votre sécurité et votre confort. Ces interventions incluent des soins comme l\'ablation de kystes, de petites lésions cutanées et autres actes mineurs.',
+      'service.matern.detail':  'Nous accompagnons les futures mamans tout au long de leur grossesse avec des suivis réguliers, des consultations prénatales, et des conseils de santé. Nous offrons un environnement sécurisé et chaleureux pour un accouchement serein et une récupération en toute confiance.',
+      'service.cpn.detail':     'Nous proposons des consultations prénatales (CPN), post-natales (CPON) et de planning familial (PF), offrant des conseils sur les méthodes de contraception, la gestion de la fertilité et la santé reproductive, tout en respectant vos choix et besoins individuels.',
+      'service.pharma.detail':  'Notre pharmacie vous propose une gamme de médicaments essentiels et de produits de santé, avec des conseils professionnels pour vous aider à gérer vos traitements et maintenir votre bien-être au quotidien.',
       'partners.title':       'Ils nous soutiennent · abafasha',
       'servicesPage.title':   'Nos Services de Santé',
       'servicesPage.sub':     'Des soins complets, accessibles et humains pour toute la famille',
@@ -38,7 +45,7 @@
       'contact.title':        'Nous contacter',
       'contact.sub':          'Umuhamagaro · Appelez-nous ou écrivez-nous, nous sommes là pour vous',
       'contact.reach':        'Nous joindre',
-      'contact.reach.sub':    'Ivuriro ryanyu — votre clinique est à votre écoute',
+      'contact.reach.sub':    'Ivuriro ryanyu · votre clinique est à votre écoute',
       'contact.phone.label':  'Téléphone',
       'contact.email.label':  'Email',
       'contact.web.label':    'Site partenaire',
@@ -62,7 +69,153 @@
       'contact.form.message': 'Message',
       'contact.form.send':    'Envoyer le message',
       'contact.location.title': 'Nous trouver · Kanyosha',
+      'about.title':                     'À propos de CDS Nyakira',
+      'about.subtitle':                  'Ivuriro ryanyu bakira neza abarwaye · Votre clinique qui accueille chaleureusement les patients',
+      'about.history.tag':               'Notre histoire',
+      'about.history.title':             'Un centre de santé au cœur de Kanyosha',
+      'about.history.p1':                'Fondé en <strong>2022</strong>, le Centre De Santé (CDS) Nyakira est né d\'une conviction profonde : chaque habitant de Kanyosha mérite un accès à des soins de qualité, avec dignité et compassion.',
+      'about.history.p2':                'Situé dans la commune rurale de Kanyosha, à Bujumbura, notre clinique s\'est rapidement imposée comme un pilier de la communauté. Nous sommes fiers d\'être <strong>« ivuriro ryanyu »</strong>, votre clinique. Un lieu où chaque patient est accueilli comme un membre de la famille.',
+      'about.history.quote':             'Tubakirana umutima w\'urukundo · Nous vous accueillons avec un cœur aimant',
+      'about.stat.year.label':           'Année de fondation',
+      'about.stat.patients.label':       'Patients par an',
+      'about.stat.services.label':       'Services médicaux',
+      'about.stat.dental.label':         'Patients mission dentaire 2024',
+      'about.approach.title':            'Une approche unique : la clémence financière',
+      'about.approach.p1':               'CDS Nyakira est l\'une des rares cliniques de la région à offrir une politique de <strong>clémence dans le remboursement des dettes médicales</strong>. Les patients peuvent recevoir des soins et, ensuite, avoir la possibilité de payer immédiatement ou de bénéficier d\'une remise de dette en cas de difficultés financières démontrées.',
+      'about.approach.p2':               'Grâce à notre partenariat avec <strong>Beauty Out of Dust</strong> et le programme <strong>GlobalGiving</strong>, nous avons pu offrir un allègement des dettes médicales aux familles les plus vulnérables de Kanyosha.',
+      'about.approach.stat.funds':       'fonds collectés (CAD)',
+      'about.approach.stat.donors':      'donateurs',
+      'about.approach.stat.duration.value': '3 ans',
+      'about.approach.stat.duration.label': 'de programme',
+      'about.partners.title':            'Nos partenaires et missions',
+      'about.partners.sub':              'Des collaborations internationales pour des soins toujours meilleurs',
+      'about.partners.globalgiving.body':'Ce programme a permis d\'offrir un allègement des dettes médicales aux familles et individus confrontés à des difficultés financières. Grâce à la générosité de <strong>18 donateurs</strong>, <strong>$1,962 (CAD)</strong> ont été collectés pour effacer les portions de dettes médicales des patients les plus vulnérables.',
+      'about.link.viewProject':          'Voir le projet',
+      'about.link.reports':              'Rapports',
+      'about.partners.budental.title':   'BuDental Mission Association (B.M.A) · Mai 2024',
+      'about.partners.budental.body':    'En mai 2024, nous avons accueilli l\'équipe d\'<strong>ACT Africa</strong> et d\'<strong>A&M Texas University</strong> pour une mission dentaire exceptionnelle. Leur équipe a offert son temps, son expertise et des dons à notre communauté.',
+      'about.link.viewPost':             'Voir la publication',
+      'about.partners.bod.title':        'Beauty Out Of Dust · Juin 2024',
+      'about.partners.bod.body':         'En juin 2024, <strong>Beauty Out of Dust (BOD)</strong> s\'est associé à <strong>ACT Africa</strong>, un groupe d\'étudiants en dentisterie de Texas A&M Dentistry, pour fournir des soins dentaires gratuits à Kanyosha, opérant depuis la clinique CDS Nyakira.',
+      'about.partners.bod.impact1':      'Services d\'hygiène essentiels à <strong>133 patients</strong>',
+      'about.partners.bod.impact2':      'Sessions éducatives sur l\'hygiène bucco-dentaire',
+      'about.partners.bod.impact3':      'Distribution gratuite de brosses à dents et dentifrice',
+      'about.link.viewImpact':           'Voir l\'impact',
+      'about.values.title':              'Nos valeurs · Indoto zacu',
+      'about.values.ubuntu.title':       'Ubuntu · Humanité',
+      'about.values.ubuntu.desc':        'Chaque personne mérite d\'être traitée avec dignité et respect. Nous croyons en la force de la communauté.',
+      'about.values.clemence.title':     'Clémence',
+      'about.values.clemence.desc':      'La santé ne devrait jamais être un luxe. Notre politique de remise de dette reflète cet engagement profond.',
+      'about.values.proximite.title':    'Proximité',
+      'about.values.proximite.desc':     'Ivuriro ryanyu · votre clinique. Nous sommes là pour vous, proches de vos préoccupations quotidiennes.',
+      'about.values.excellence.title':   'Excellence',
+      'about.values.excellence.desc':    'Nous visons toujours les meilleurs soins, avec des équipes formées et un accueil chaleureux pour tous.',
     },
+    en: {
+      'hero.kirundi':         'Ni ivuriro ryanyu',
+      'hero.title':           'Your health, our priority.',
+      'hero.text':            'At CDS Nyakira clinic, we provide quality healthcare with compassion and humanity. Located in Kanyosha, we offer consultations, laboratory, maternity, minor surgery and more.',
+      'hero.cta.whatsapp':    'WhatsApp · 76 86 90 00',
+      'hero.cta.services':    'Our services',
+      'services.title':       'Our services',
+      'services.sub':         'Comprehensive care, close to you, with a loving heart.',
+      'service.consult':      'Consultation',
+      'service.consult.sub':  'General & specialized',
+      'service.labo':         'Laboratory',
+      'service.labo.sub':     'Reliable analyses',
+      'service.chir':         'Minor Surgery',
+      'service.chir.sub':     'Care & minor procedures',
+      'service.matern':       'Maternity',
+      'service.matern.sub':   'Delivery & follow-up',
+      'service.cpn':          'ANC · PNC · FP',
+      'service.cpn.sub':      'Family planning',
+      'service.pharma':       'Pharmacy',
+      'service.pharma.sub':   'Essential medicines',
+      'service.consult.detail': 'Our qualified doctors are available to provide personalized consultations, whether for a medical follow-up, a diagnosis, or any health concern. We listen carefully and offer solutions tailored to your situation.',
+      'service.labo.detail':    'We have a laboratory to carry out a range of medical tests to better understand your health condition. Our analyses are performed with precision and results are communicated as quickly as possible.',
+      'service.chir.detail':    'Our teams perform minor surgical procedures under optimal conditions to ensure your safety and comfort. These procedures include care such as cyst removal, minor skin lesion treatment, and other minor interventions.',
+      'service.matern.detail':  'We support expectant mothers throughout their pregnancy with regular follow-ups, prenatal consultations, and health guidance. We offer a safe environment for a peaceful delivery and a confident recovery.',
+      'service.cpn.detail':     'We offer prenatal (ANC), postnatal (PNC), and family planning (FP) consultations, with guidance on contraception methods, fertility management, and reproductive health, while respecting your individual choices and needs.',
+      'service.pharma.detail':  'Our pharmacy offers a range of essential medicines and health products, with professional advice to help you manage your treatments and maintain your daily well-being.',
+      'partners.title':       'Our partners',
+      'servicesPage.title':   'Our Health Services',
+      'servicesPage.sub':     'Comprehensive, accessible and humane care for the whole family',
+      'servicesPage.intro':   'At CDS Nyakira, we are committed to providing quality care tailored to your needs. Discover our services below, designed to support your well-being every day.',
+      'contact.title':        'Contact Us',
+      'contact.sub':          'Umuhamagaro · Call us or write to us, we are here for you',
+      'contact.reach':        'Reach us',
+      'contact.reach.sub':    'Ivuriro ryanyu · Your clinic is listening',
+      'contact.phone.label':  'Phone',
+      'contact.email.label':  'Email',
+      'contact.web.label':    'Partner website',
+      'contact.address.label':'Address',
+      'contact.address':      'Kanyosha, Rural Commune\nBujumbura, Burundi',
+      'contact.whatsapp.btn': 'Message on WhatsApp',
+      'contact.whatsapp.note':'Fast reply · Available in French, Kirundi, English',
+      'contact.form.title':   'Send a message',
+      'contact.form.sub':     'We will reply as soon as possible',
+      'contact.form.firstName':'First name',
+      'contact.form.lastName':'Last name',
+      'contact.form.phone':   'Phone / WhatsApp',
+      'contact.form.subject': 'Subject',
+      'contact.form.subject.placeholder': 'Choose a subject…',
+      'contact.form.subject.consult': 'Medical consultation',
+      'contact.form.subject.labo': 'Laboratory / Analyses',
+      'contact.form.subject.matern': 'Maternity',
+      'contact.form.subject.pharma': 'Pharmacy',
+      'contact.form.subject.info': 'General information',
+      'contact.form.subject.other': 'Other',
+      'contact.form.message': 'Message',
+      'contact.form.send':    'Send message',
+      'contact.location.title': 'Find us · Kanyosha',
+      'about.title':                     'About CDS Nyakira',
+      'about.subtitle':                  'Ivuriro ryanyu bakira neza abarwaye · Your clinic that warmly welcomes patients',
+      'about.history.tag':               'Our story',
+      'about.history.title':             'A health center at the heart of Kanyosha',
+      'about.history.p1':                'Founded in <strong>2022</strong>, the Centre De Santé (CDS) Nyakira was born from a deep conviction: every resident of Kanyosha deserves access to quality care, with dignity and compassion.',
+      'about.history.p2':                'Located in the rural commune of Kanyosha, in Bujumbura, our clinic quickly became a pillar of the community. We are proud to be <strong>"ivuriro ryanyu"</strong>, your clinic. A place where every patient is welcomed like a member of the family.',
+      'about.history.quote':             'Tubakirana umutima w\'urukundo · We welcome you with a loving heart',
+      'about.stat.year.label':           'Year founded',
+      'about.stat.patients.label':       'Patients per year',
+      'about.stat.services.label':       'Medical services',
+      'about.stat.dental.label':         '2024 dental mission patients',
+      'about.approach.title':            'A unique approach: financial clemency',
+      'about.approach.p1':               'CDS Nyakira is one of the few clinics in the region to offer a policy of <strong>clemency in medical debt repayment</strong>. Patients can receive care and afterward pay immediately or benefit from debt relief in cases of demonstrated financial hardship.',
+      'about.approach.p2':               'Thanks to our partnership with <strong>Beauty Out of Dust</strong> and the <strong>GlobalGiving</strong> program, we have been able to relieve medical debt for the most vulnerable families of Kanyosha.',
+      'about.approach.stat.funds':       'funds raised (CAD)',
+      'about.approach.stat.donors':      'donors',
+      'about.approach.stat.duration.value': '3 years',
+      'about.approach.stat.duration.label': 'of the program',
+      'about.partners.title':            'Our partners and missions',
+      'about.partners.sub':              'International collaborations for ever better care',
+      'about.partners.globalgiving.body':'This program provided medical debt relief to families and individuals facing financial hardship. Thanks to the generosity of <strong>18 donors</strong>, <strong>$1,962 (CAD)</strong> was raised to clear portions of medical debt for the most vulnerable patients.',
+      'about.link.viewProject':          'View the project',
+      'about.link.reports':              'Reports',
+      'about.partners.budental.title':   'BuDental Mission Association (B.M.A) · May 2024',
+      'about.partners.budental.body':    'In May 2024, we welcomed the team from <strong>ACT Africa</strong> and <strong>A&M Texas University</strong> for an exceptional dental mission. Their team gave their time, expertise, and donations to our community.',
+      'about.link.viewPost':             'View the post',
+      'about.partners.bod.title':        'Beauty Out Of Dust · June 2024',
+      'about.partners.bod.body':         'In June 2024, <strong>Beauty Out of Dust (BOD)</strong> partnered with <strong>ACT Africa</strong>, a group of dental students from Texas A&M Dentistry, to provide free dental care in Kanyosha, operating from the CDS Nyakira clinic.',
+      'about.partners.bod.impact1':      'Essential hygiene services for <strong>133 patients</strong>',
+      'about.partners.bod.impact2':      'Educational sessions on oral hygiene',
+      'about.partners.bod.impact3':      'Free distribution of toothbrushes and toothpaste',
+      'about.link.viewImpact':           'View the impact',
+      'about.values.title':              'Our values · Indoto zacu',
+      'about.values.ubuntu.title':       'Ubuntu · Humanity',
+      'about.values.ubuntu.desc':        'Every person deserves to be treated with dignity and respect. We believe in the strength of community.',
+      'about.values.clemence.title':     'Clemency',
+      'about.values.clemence.desc':      'Health should never be a luxury. Our debt relief policy reflects this deep commitment.',
+      'about.values.proximite.title':    'Closeness',
+      'about.values.proximite.desc':     'Ivuriro ryanyu · your clinic. We are here for you, close to your everyday concerns.',
+      'about.values.excellence.title':   'Excellence',
+      'about.values.excellence.desc':    'We always aim for the best care, with trained teams and a warm welcome for everyone.',
+    },
+
+    // ===== LANGUES DÉSACTIVÉES (RN / SW / ZH) =====
+    // Sélecteur RN, SW, ZH : le clic affiche un pop-up « bientôt disponible »
+    // (voir handleLangClick, section 3) sans changer la langue affichée.
+    // Dictionnaires conservés intacts pour permettre une réactivation future
+    // sans avoir à retraduire depuis zéro.
     rn: {
       'hero.kirundi':         'Ni ivuriro ryanyu',
       'hero.title':           'Ubuzima bwawe, intumbero yacu.',
@@ -92,60 +245,8 @@
       'contact.form.title':   'Twoherere ubutumwa',
       'contact.form.send':    'Ohereza ubutumwa',
     },
-    en: {
-      'hero.kirundi':         'It is your clinic',
-      'hero.title':           'Your health, our priority.',
-      'hero.text':            'At CDS Nyakira clinic, we provide quality healthcare with compassion and humanity. Located in Kanyosha, we offer consultations, laboratory, maternity, minor surgery and more.',
-      'hero.cta.whatsapp':    'WhatsApp · 76 86 90 00',
-      'hero.cta.services':    'Our services',
-      'services.title':       'Our services',
-      'services.sub':         'Comprehensive care, close to you, with a loving heart.',
-      'service.consult':      'Consultation',
-      'service.consult.sub':  'General & specialized',
-      'service.labo':         'Laboratory',
-      'service.labo.sub':     'Reliable analyses',
-      'service.chir':         'Minor Surgery',
-      'service.chir.sub':     'Care & minor procedures',
-      'service.matern':       'Maternity',
-      'service.matern.sub':   'Delivery & follow-up',
-      'service.cpn':          'ANC · PNC · FP',
-      'service.cpn.sub':      'Family planning',
-      'service.pharma':       'Pharmacy',
-      'service.pharma.sub':   'Essential medicines',
-      'partners.title':       'Our partners',
-      'servicesPage.title':   'Our Health Services',
-      'servicesPage.sub':     'Comprehensive, accessible and humane care for the whole family',
-      'servicesPage.intro':   'At CDS Nyakira, we are committed to providing quality care tailored to your needs. Discover our services below, designed to support your well-being every day.',
-      'contact.title':        'Contact Us',
-      'contact.sub':          'Call us or write to us, we are here for you',
-      'contact.reach':        'Reach us',
-      'contact.reach.sub':    'Your clinic is listening',
-      'contact.phone.label':  'Phone',
-      'contact.email.label':  'Email',
-      'contact.web.label':    'Partner website',
-      'contact.address.label':'Address',
-      'contact.address':      'Kanyosha, Rural Commune\nBujumbura, Burundi',
-      'contact.whatsapp.btn': 'Message on WhatsApp',
-      'contact.whatsapp.note':'Fast reply · Available in French, Kirundi, English',
-      'contact.form.title':   'Send a message',
-      'contact.form.sub':     'We will reply as soon as possible',
-      'contact.form.firstName':'First name',
-      'contact.form.lastName':'Last name',
-      'contact.form.phone':   'Phone / WhatsApp',
-      'contact.form.subject': 'Subject',
-      'contact.form.subject.placeholder': 'Choose a subject…',
-      'contact.form.subject.consult': 'Medical consultation',
-      'contact.form.subject.labo': 'Laboratory / Analyses',
-      'contact.form.subject.matern': 'Maternity',
-      'contact.form.subject.pharma': 'Pharmacy',
-      'contact.form.subject.info': 'General information',
-      'contact.form.subject.other': 'Other',
-      'contact.form.message': 'Message',
-      'contact.form.send':    'Send message',
-      'contact.location.title': 'Find us · Kanyosha',
-    },
     sw: {
-      'hero.kirundi':         'Ni kliniki yako',
+      'hero.kirundi':         'Ni ivuriro ryanyu',
       'hero.title':           'Afya yako, kipaumbele chetu.',
       'hero.text':            'Kliniki ya CDS Nyakira inatoa huduma za afya bora kwa huruma na ubinadamu. Iko Kanyosha. Tunatoa: mashauriano, maabara, uzazi, upasuaji mdogo na zaidi.',
       'hero.cta.whatsapp':    'WhatsApp · 76 86 90 00',
@@ -171,7 +272,7 @@
       'contact.form.send':    'Tuma ujumbe',
     },
     zh: {
-      'hero.kirundi':         '这是您的诊所',
+      'hero.kirundi':         'Ni ivuriro ryanyu',
       'hero.title':           '您的健康，我们的使命。',
       'hero.text':            'CDS Nyakira诊所以仁爱之心提供优质医疗服务。位于坎约沙，提供：问诊、化验室、产科、小手术等服务。',
       'hero.cta.whatsapp':    'WhatsApp · 76 86 90 00',
@@ -212,7 +313,7 @@
         if (el.tagName === 'INPUT' && el.placeholder !== undefined) {
           el.placeholder = text;
         } else {
-          el.textContent = text;
+          el.innerHTML = text;
         }
       }
     });
@@ -224,11 +325,41 @@
   // ===================================================
   // 3. SÉLECTEUR DE LANGUE
   // ===================================================
-  let currentLang = localStorage.getItem('cdsLang') || 'fr';
+  const ACTIVE_LANGS = ['fr', 'en']; // Langues activables. rn/sw/zh restent visibles dans le sélecteur mais désactivées.
+
+  // Messages du pop-up "langue indisponible", affichés selon la langue actuellement active.
+  const LANG_COMING_SOON_MSG = {
+    fr: 'Cette langue sera bientôt disponible.',
+    en: 'This language will be available soon.',
+  };
+
+  // Accès défensif à localStorage : certains contextes (navigation privée, cookies
+  // bloqués, iframe) peuvent lever une exception à l'accès. Cette précaution est
+  // indépendante de l'hébergeur (GitHub Pages, Vercel, etc.) puisque localStorage
+  // est une API du navigateur, pas du serveur ; elle reste donc valable après migration.
+  function safeGetItem(key) {
+    try {
+      return localStorage.getItem(key);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function safeSetItem(key, value) {
+    try {
+      localStorage.setItem(key, value);
+    } catch (e) {
+      // Stockage indisponible : la préférence de langue ne sera pas persistée,
+      // mais le site continue de fonctionner normalement pour la session en cours.
+    }
+  }
+
+  const storedLang = safeGetItem('cdsLang');
+  let currentLang = ACTIVE_LANGS.includes(storedLang) ? storedLang : 'fr';
 
   function setLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('cdsLang', lang);
+    safeSetItem('cdsLang', lang);
 
     document.querySelectorAll('.lang-item').forEach(item => {
       item.classList.toggle('active', item.dataset.lang === lang);
@@ -238,13 +369,24 @@
     console.log(`🌐 Langue: ${lang.toUpperCase()}`);
   }
 
+  // Point d'entrée unique pour tout clic sur un item de langue (desktop + mobile).
+  // Centraliser ici permet de réutiliser la même logique si de nouvelles langues
+  // sont activées/désactivées plus tard, sans dupliquer le contrôle ailleurs.
+  function handleLangClick(lang) {
+    if (!ACTIVE_LANGS.includes(lang)) {
+      showNotification(LANG_COMING_SOON_MSG[currentLang] || LANG_COMING_SOON_MSG.fr, 'info');
+      return;
+    }
+    setLanguage(lang);
+  }
+
   document.querySelectorAll('.lang-item').forEach(item => {
     item.addEventListener('click', function () {
-      setLanguage(this.dataset.lang);
+      handleLangClick(this.dataset.lang);
     });
   });
 
-  // Appliquer la langue sauvegardée au chargement
+  // Appliquer la langue sauvegardée au chargement (déjà validée ci-dessus contre ACTIVE_LANGS)
   if (currentLang !== 'fr') {
     setLanguage(currentLang);
   }
@@ -343,6 +485,51 @@
       toast.style.opacity = '0';
       setTimeout(() => toast.remove(), 320);
     }, 2500);
+  }
+  
+  // ===================================================
+  // MENU MOBILE — hamburger toggle
+  // ===================================================
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (menuToggle && navLinks) {
+    // Injecter le sélecteur de langue dans le menu mobile
+    const langSel = document.getElementById('langSelector');
+    if (langSel) {
+      const langMobile = document.createElement('div');
+      langMobile.className = 'lang-mobile';
+      langSel.querySelectorAll('.lang-item').forEach(item => {
+        const clone = item.cloneNode(true);
+        clone.addEventListener('click', function () {
+          handleLangClick(this.dataset.lang);
+        });
+        langMobile.appendChild(clone);
+      });
+      navLinks.appendChild(langMobile);
+    }
+
+    menuToggle.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Fermer le menu si on clique sur un lien
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.classList.remove('open');
+      });
+    });
+
+    // Fermer si clic en dehors
+    document.addEventListener('click', function (e) {
+      if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('open');
+        menuToggle.classList.remove('open');
+      }
+    });
   }
 
   // ===================================================

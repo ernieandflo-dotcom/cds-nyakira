@@ -16,22 +16,25 @@
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <i class="fas fa-clinic-medical"></i>
         <span>CDS Nyakira <small>ivuriro ryanyu</small></span>
-      </div>
+      </a>
       <nav class="nav-links">
         <a href="index.html">Accueil</a>
         <a href="services.html">Services</a>
         <a href="about.html" class="active">À propos</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <div class="lang-selector" id="langSelector">
         <span class="lang-item active" data-lang="fr">FR</span>
-        <span class="lang-item" data-lang="rn">RN</span>
         <span class="lang-item" data-lang="en">EN</span>
-        <span class="lang-item" data-lang="sw">SW</span>
-        <span class="lang-item" data-lang="zh">中文</span>
+        <span class="lang-item lang-disabled" data-lang="rn">RN</span>
+        <span class="lang-item lang-disabled" data-lang="sw">SW</span>
+        <span class="lang-item lang-disabled" data-lang="zh">中文</span>
       </div>
     </div>
   </header>
@@ -42,8 +45,8 @@
     <section class="page-header" style="background-image: url('assets/equipe_nyakira.jpeg');">
       <div class="page-header-overlay"></div>
       <div class="container page-header-content">
-        <h1 class="page-title">À propos de CDS Nyakira</h1>
-        <p class="page-subtitle">Ivuriro ryanyu bakira neza abarwaye · Votre clinique qui accueille chaleureusement les patients</p>
+        <h1 class="page-title" data-i18n="about.title">À propos de CDS Nyakira</h1>
+        <p class="page-subtitle" data-i18n="about.subtitle">Ivuriro ryanyu bakira neza abarwaye · Votre clinique qui accueille chaleureusement les patients</p>
       </div>
     </section>
 
@@ -54,39 +57,39 @@
           <div class="mission-text">
             <div class="section-tagline">
               <i class="fas fa-heart"></i>
-              <span>Notre histoire</span>
+              <span data-i18n="about.history.tag">Notre histoire</span>
             </div>
-            <h2>Un centre de santé au cœur de Kanyosha</h2>
-            <p class="mission-paragraph">
+            <h2 data-i18n="about.history.title">Un centre de santé au cœur de Kanyosha</h2>
+            <p class="mission-paragraph" data-i18n="about.history.p1">
               Fondé en <strong>2022</strong>, le Centre De Santé (CDS) Nyakira est né d'une conviction profonde : 
               chaque habitant de Kanyosha mérite un accès à des soins de qualité, avec dignité et compassion.
             </p>
-            <p class="mission-paragraph">
+            <p class="mission-paragraph" data-i18n="about.history.p2">
               Situé dans la commune rurale de Kanyosha, à Bujumbura, notre clinique s'est rapidement imposée 
-              comme un pilier de la communauté. Nous sommes fiers d'être <strong>« ivuriro ryanyu »</strong> — votre clinique. 
+              comme un pilier de la communauté. Nous sommes fiers d'être <strong>« ivuriro ryanyu »</strong>, votre clinique. 
               Un lieu où chaque patient est accueilli comme un membre de la famille.
             </p>
             <div class="mission-quote">
               <i class="fas fa-quote-left"></i>
-              <p>Tubakirana umutima w'urukundo · Nous vous accueillons avec un cœur aimant</p>
+              <p data-i18n="about.history.quote">Tubakirana umutima w'urukundo · Nous vous accueillons avec un cœur aimant</p>
             </div>
           </div>
           <div class="mission-stats">
             <div class="stat-card">
               <div class="stat-number">2022</div>
-              <div class="stat-label">Année de fondation</div>
+              <div class="stat-label" data-i18n="about.stat.year.label">Année de fondation</div>
             </div>
             <div class="stat-card">
               <div class="stat-number">+500</div>
-              <div class="stat-label">Patients par an</div>
+              <div class="stat-label" data-i18n="about.stat.patients.label">Patients par an</div>
             </div>
             <div class="stat-card">
               <div class="stat-number">6</div>
-              <div class="stat-label">Services médicaux</div>
+              <div class="stat-label" data-i18n="about.stat.services.label">Services médicaux</div>
             </div>
             <div class="stat-card">
               <div class="stat-number">133</div>
-              <div class="stat-label">Patients mission dentaire 2024</div>
+              <div class="stat-label" data-i18n="about.stat.dental.label">Patients mission dentaire 2024</div>
             </div>
           </div>
         </div>
@@ -101,27 +104,27 @@
             <i class="fas fa-hand-holding-heart"></i>
           </div>
           <div class="approach-content">
-            <h2>Une approche unique : la clémence financière</h2>
-            <p>
+            <h2 data-i18n="about.approach.title">Une approche unique : la clémence financière</h2>
+            <p data-i18n="about.approach.p1">
               CDS Nyakira est l'une des rares cliniques de la région à offrir une politique de <strong>clémence dans le remboursement des dettes médicales</strong>. 
               Les patients peuvent recevoir des soins et, ensuite, avoir la possibilité de payer immédiatement ou de bénéficier d'une remise de dette en cas de difficultés financières démontrées.
             </p>
-            <p>
+            <p data-i18n="about.approach.p2">
               Grâce à notre partenariat avec <strong>Beauty Out of Dust</strong> et le programme <strong>GlobalGiving</strong>, nous avons pu offrir un allègement 
               des dettes médicales aux familles les plus vulnérables de Kanyosha.
             </p>
             <div class="approach-stats">
               <div class="approach-stat-item">
                 <span class="stat-highlight">$1,962</span>
-                <span class="stat-desc">fonds collectés (CAD)</span>
+                <span class="stat-desc" data-i18n="about.approach.stat.funds">fonds collectés (CAD)</span>
               </div>
               <div class="approach-stat-item">
                 <span class="stat-highlight">18</span>
-                <span class="stat-desc">donateurs</span>
+                <span class="stat-desc" data-i18n="about.approach.stat.donors">donateurs</span>
               </div>
               <div class="approach-stat-item">
-                <span class="stat-highlight">3 ans</span>
-                <span class="stat-desc">de programme</span>
+                <span class="stat-highlight" data-i18n="about.approach.stat.duration.value">3 ans</span>
+                <span class="stat-desc" data-i18n="about.approach.stat.duration.label">de programme</span>
               </div>
             </div>
           </div>
@@ -132,8 +135,8 @@
     <!-- ===== PARTENARIATS & MISSIONS ===== -->
     <section class="partnerships-section">
       <div class="container">
-        <h2 class="section-title">Nos partenaires et missions</h2>
-        <p class="section-sub">Des collaborations internationales pour des soins toujours meilleurs</p>
+        <h2 class="section-title" data-i18n="about.partners.title">Nos partenaires et missions</h2>
+        <p class="section-sub" data-i18n="about.partners.sub">Des collaborations internationales pour des soins toujours meilleurs</p>
 
         <!-- GlobalGiving -->
         <div class="partnership-card">
@@ -143,16 +146,16 @@
           </div>
           <div class="partnership-body">
             <p class="partnership-title">« Medical Relief for patients of CDS Nyakira »</p>
-            <p>
+            <p data-i18n="about.partners.globalgiving.body">
               Ce programme a permis d'offrir un allègement des dettes médicales aux familles et individus confrontés à des difficultés financières. 
               Grâce à la générosité de <strong>18 donateurs</strong>, <strong>$1,962 (CAD)</strong> ont été collectés pour effacer les portions de dettes médicales des patients les plus vulnérables.
             </p>
             <div class="partnership-links">
               <a href="https://www.globalgiving.org/projects/medical-relief-for-patients-of-cds-nyakira/" target="_blank" rel="noopener" class="btn-link">
-                <i class="fas fa-external-link-alt"></i> Voir le projet
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="about.link.viewProject">Voir le projet</span>
               </a>
               <a href="https://www.globalgiving.org/projects/medical-relief-for-patients-of-cds-nyakira/reports/#menu" target="_blank" rel="noopener" class="btn-link">
-                <i class="fas fa-file-alt"></i> Rapports
+                <i class="fas fa-file-alt"></i> <span data-i18n="about.link.reports">Rapports</span>
               </a>
             </div>
           </div>
@@ -162,10 +165,10 @@
         <div class="partnership-card">
           <div class="partnership-header">
             <i class="fas fa-tooth"></i>
-            <h3>BuDental Mission Association (B.M.A) · Mai 2024</h3>
+            <h3 data-i18n="about.partners.budental.title">BuDental Mission Association (B.M.A) · Mai 2024</h3>
           </div>
           <div class="partnership-body">
-            <p>
+            <p data-i18n="about.partners.budental.body">
               En mai 2024, nous avons accueilli l'équipe d'<strong>ACT Africa</strong> et d'<strong>A&amp;M Texas University</strong> pour une mission dentaire exceptionnelle. Leur équipe a offert son temps, son expertise et des dons à notre communauté.
             </p>
             <blockquote class="instagram-quote">
@@ -174,7 +177,7 @@
             </blockquote>
             <div class="partnership-links">
               <a href="https://www.instagram.com/p/C_Gjzfpi729/" target="_blank" rel="noopener" class="btn-link">
-                <i class="fab fa-instagram"></i> Voir la publication
+                <i class="fab fa-instagram"></i> <span data-i18n="about.link.viewPost">Voir la publication</span>
               </a>
               <a href="https://www.instagram.com/budentalmission/" target="_blank" rel="noopener" class="btn-link">
                 <i class="fab fa-instagram"></i> @budentalmission
@@ -187,21 +190,21 @@
         <div class="partnership-card">
           <div class="partnership-header">
             <i class="fas fa-seedling"></i>
-            <h3>Beauty Out Of Dust · Juin 2024</h3>
+            <h3 data-i18n="about.partners.bod.title">Beauty Out Of Dust · Juin 2024</h3>
           </div>
           <div class="partnership-body">
             <p class="partnership-title">« IMPACT STATEMENT: Beauty in Dreams »</p>
-            <p>
+            <p data-i18n="about.partners.bod.body">
               En juin 2024, <strong>Beauty Out of Dust (BOD)</strong> s'est associé à <strong>ACT Africa</strong>, un groupe d'étudiants en dentisterie de Texas A&amp;M Dentistry, pour fournir des soins dentaires gratuits à Kanyosha, opérant depuis la clinique CDS Nyakira.
             </p>
             <ul class="impact-list">
-              <li><i class="fas fa-check-circle"></i> Services d'hygiène essentiels à <strong>133 patients</strong></li>
-              <li><i class="fas fa-check-circle"></i> Sessions éducatives sur l'hygiène bucco-dentaire</li>
-              <li><i class="fas fa-check-circle"></i> Distribution gratuite de brosses à dents et dentifrice</li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="about.partners.bod.impact1">Services d'hygiène essentiels à <strong>133 patients</strong></span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="about.partners.bod.impact2">Sessions éducatives sur l'hygiène bucco-dentaire</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="about.partners.bod.impact3">Distribution gratuite de brosses à dents et dentifrice</span></li>
             </ul>
             <div class="partnership-links">
               <a href="https://www.bod11.org/impact.html" target="_blank" rel="noopener" class="btn-link">
-                <i class="fas fa-external-link-alt"></i> Voir l'impact
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="about.link.viewImpact">Voir l'impact</span>
               </a>
             </div>
           </div>
@@ -213,27 +216,27 @@
     <!-- ===== VALEURS ===== -->
     <section class="values-section">
       <div class="container">
-        <h2 class="section-title">Nos valeurs · Indoto zacu</h2>
+        <h2 class="section-title" data-i18n="about.values.title">Nos valeurs · Indoto zacu</h2>
         <div class="values-grid">
           <div class="value-card">
             <i class="fas fa-heart"></i>
-            <h3>Ubuntu · Humanité</h3>
-            <p>Chaque personne mérite d'être traitée avec dignité et respect. Nous croyons en la force de la communauté.</p>
+            <h3 data-i18n="about.values.ubuntu.title">Ubuntu · Humanité</h3>
+            <p data-i18n="about.values.ubuntu.desc">Chaque personne mérite d'être traitée avec dignité et respect. Nous croyons en la force de la communauté.</p>
           </div>
           <div class="value-card">
             <i class="fas fa-hand-holding-heart"></i>
-            <h3>Clémence</h3>
-            <p>La santé ne devrait jamais être un luxe. Notre politique de remise de dette reflète cet engagement profond.</p>
+            <h3 data-i18n="about.values.clemence.title">Clémence</h3>
+            <p data-i18n="about.values.clemence.desc">La santé ne devrait jamais être un luxe. Notre politique de remise de dette reflète cet engagement profond.</p>
           </div>
           <div class="value-card">
             <i class="fas fa-handshake"></i>
-            <h3>Proximité</h3>
-            <p>Ivuriro ryanyu — votre clinique. Nous sommes là pour vous, proches de vos préoccupations quotidiennes.</p>
+            <h3 data-i18n="about.values.proximite.title">Proximité</h3>
+            <p data-i18n="about.values.proximite.desc">Ivuriro ryanyu · votre clinique. Nous sommes là pour vous, proches de vos préoccupations quotidiennes.</p>
           </div>
           <div class="value-card">
             <i class="fas fa-star"></i>
-            <h3>Excellence</h3>
-            <p>Nous visons toujours les meilleurs soins, avec des équipes formées et un accueil chaleureux pour tous.</p>
+            <h3 data-i18n="about.values.excellence.title">Excellence</h3>
+            <p data-i18n="about.values.excellence.desc">Nous visons toujours les meilleurs soins, avec des équipes formées et un accueil chaleureux pour tous.</p>
           </div>
         </div>
       </div>

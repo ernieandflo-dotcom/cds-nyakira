@@ -16,22 +16,25 @@
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <i class="fas fa-clinic-medical"></i>
         <span>CDS Nyakira <small>ivuriro ryanyu</small></span>
-      </div>
+      </a>
       <nav class="nav-links">
         <a href="index.html">Accueil</a>
         <a href="services.html" class="active">Services</a>
         <a href="about.html">À propos</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <div class="lang-selector" id="langSelector">
         <span class="lang-item active" data-lang="fr">FR</span>
-        <span class="lang-item" data-lang="rn">RN</span>
         <span class="lang-item" data-lang="en">EN</span>
-        <span class="lang-item" data-lang="sw">SW</span>
-        <span class="lang-item" data-lang="zh">中文</span>
+        <span class="lang-item lang-disabled" data-lang="rn">RN</span>
+        <span class="lang-item lang-disabled" data-lang="sw">SW</span>
+        <span class="lang-item lang-disabled" data-lang="zh">中文</span>
       </div>
     </div>
   </header>
