@@ -15,10 +15,11 @@ cds-nyakira/
 │   └── styles.css      # Styles (variables CSS, mobile-first)
 ├── js/
 │   └── script.js       # i18n 5 langues + interactions
-└── assets/             # Images (à ajouter)
+└── assets/             # Images 
     ├── banderole.jpeg
-    ├── accueil.jpeg
-    └── services-banner.jpeg
+    ├── accompagnement.jpeg
+    ├── consulation002.jpeg
+    └── equipe_nyakira.jpeg
 ```
 
 ## Fonctionnalités
