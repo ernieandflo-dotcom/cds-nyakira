@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDS Nyakira · Demande d'informations</title>
+  <meta name="description" content="Formulaire interne de collecte d'informations pour la finalisation du site CDS Nyakira.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <!-- Page hors branding CDS Nyakira : outil interne de Grosse-Tête Média, sans lien vers le site principal ni sélecteur de langue. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo gt-logo">
+        <img src="assets/logo-GT.png" alt="Grosse-Tête Média">
+        <span>Grosse-Tête Média</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="info-page-header">
+      <div class="container">
+        <h1 class="page-title-plain"><i class="fas fa-clipboard-list"></i> Demande d'informations</h1>
+        <h2 class="page-title2-plain"></i> CDS Nyakira</h1>
+        <p class="page-subtitle-plain">
+          Afin de finaliser la mise en place du projet, merci de bien vouloir transmettre les informations
+          ci-dessous concernant l'établissement.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== RÉCAPITULATIF ===== -->
+    <section class="container">
+      <div class="info-recap-card">
+        <h2><i class="fas fa-check-double"></i> Informations indispensables</h2>
+        <p class="subtitle">Les champs marqués <span class="field-tag field-tag--required">Nécessaire</span> sont indispensables à la finalisation du projet. Les champs <span class="field-tag field-tag--recommended">Recommandé</span> ou <span class="field-tag field-tag--optional">Optionnel</span> permettent une configuration plus complète.</p>
+        <ul class="recap-list">
+          <li><i class="fas fa-check-circle"></i> Adresse email principale</li>
+          <li><i class="fas fa-check-circle"></i> Numéro de téléphone / WhatsApp principal</li>
+          <li><i class="fas fa-check-circle"></i> Coordonnées GPS · longitude et latitude</li>
+          <li><i class="fas fa-check-circle"></i> Adresse complète de l'établissement</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== FORMULAIRE ===== -->
+    <section class="container info-form-section">
+      <!--
+        IMPORTANT : remplacer YOUR_FORM_ID par l'identifiant de formulaire Formspree
+        (visible dans le tableau de bord Formspree, ex. https://formspree.io/f/abcd1234)
+      -->
+      <form class="info-form-card" action="https://formspree.io/f/meajenzr" method="POST">
+
+        <!-- Anti-spam Formspree (champ caché, ne pas afficher ni supprimer) -->
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_subject" value="CDS Nyakira · Demande d'informations">
+
+        <!-- ===== A. ADRESSES EMAIL ===== -->
+        <div class="form-section-block">
+          <h3 class="form-section-title"><i class="far fa-envelope"></i> A. Adresses email</h3>
+
+          <div class="form-group">
+            <label for="emailPrincipal">
+              Adresse email principale
+              <span class="field-tag field-tag--required">Nécessaire</span>
+            </label>
+            <p class="field-help">Adresse email principale à utiliser pour les communications liées à l'établissement.</p>
+            <input type="email" id="emailPrincipal" name="Adresse email principale" required placeholder="exemple@domaine.com">
+          </div>
+
+          <div class="form-group">
+            <label for="emailAutres">
+              Autres adresses email ou personnes-ressources
+              <span class="field-tag field-tag--optional">Optionnel</span>
+            </label>
+            <p class="field-help">Adresses additionnelles pertinentes (direction, administration, réservations, comptabilité, service à la clientèle, etc.) avec le nom de la personne-ressource associée.</p>
+            <textarea id="emailAutres" name="Autres adresses email ou personnes-ressources" placeholder="Ex. : Jean Nkurunziza, administration, jean@domaine.com"></textarea>
+          </div>
+        </div>
+
+        <!-- ===== B. TÉLÉPHONE ===== -->
+        <div class="form-section-block">
+          <h3 class="form-section-title"><i class="fas fa-phone-alt"></i> B. Téléphone</h3>
+
+          <div class="form-group">
+            <label for="telPrincipal">
+              Numéro de téléphone / WhatsApp principal
+              <span class="field-tag field-tag--required">Nécessaire</span>
+            </label>
+            <p class="field-help">Numéro principal, avec indicatif régional ou international. Préciser si ce numéro est également disponible sur WhatsApp.</p>
+            <input type="tel" id="telPrincipal" name="Téléphone / WhatsApp principal" required placeholder="+257 __ __ __ __ · disponible sur WhatsApp : oui/non">
+          </div>
+
+          <div class="form-group">
+            <label for="telAutres">
+              Autres numéros ou personnes-ressources
+              <span class="field-tag field-tag--optional">Optionnel</span>
+            </label>
+            <p class="field-help">Numéros pertinents ou coordonnées de personnes/services spécifiques (réservations, administration, service à la clientèle, etc.).</p>
+            <textarea id="telAutres" name="Autres numéros ou personnes-ressources" placeholder="Ex. : Marie Ndayishimiye, réservations, +257 __ __ __ __"></textarea>
+          </div>
+        </div>
+
+        <!-- ===== C. LOCALISATION ===== -->
+        <div class="form-section-block">
+          <h3 class="form-section-title"><i class="fas fa-map-marker-alt"></i> C. Localisation de l'établissement</h3>
+
+          <div class="form-group">
+            <label>
+              Coordonnées GPS
+              <span class="field-tag field-tag--required">Nécessaire</span>
+            </label>
+            <p class="field-help">Coordonnées GPS exactes de l'établissement. Exemple : -79.3832, 43.6532</p>
+            <a href="https://www.youtube.com/shorts/XauFPka3kmM" target="_blank" rel="noopener" class="btn btn-green gps-video-btn">
+              <i class="fab fa-youtube"></i>
+              <span>Voir la vidéo · comment récupérer ses coordonnées GPS</span>
+            </a>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="longitude">Longitude</label>
+                <input type="text" id="longitude" name="Longitude" required placeholder="Ex. : 29.32">
+              </div>
+              <div class="form-group">
+                <label for="latitude">Latitude</label>
+                <input type="text" id="latitude" name="Latitude" required placeholder="Ex. : -3.46">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="adresseComplete">
+              Adresse complète de l'établissement
+              <span class="field-tag field-tag--required">Nécessaire</span>
+            </label>
+            <p class="field-help">Adresse physique complète de l'établissement.</p>
+            <textarea id="adresseComplete" name="Adresse complète" required placeholder="Ex. : Kanyosha, Commune Rurale, Bujumbura, Burundi"></textarea>
+          </div>
+        </div>
+
+        <!-- ===== D. HORAIRES ===== -->
+        <div class="form-section-block">
+          <h3 class="form-section-title"><i class="far fa-clock"></i> D. Horaires</h3>
+
+          <div class="form-group">
+            <label for="horairesEtablissement">
+              Heures d'ouverture et de fermeture de l'établissement
+              <span class="field-tag field-tag--recommended">Recommandé</span>
+            </label>
+            <p class="field-help">Heures d'ouverture pour chaque jour de la semaine.</p>
+            <textarea id="horairesEtablissement" name="Horaires de l'établissement" placeholder="Ex. : Lundi-Vendredi 7h-17h · Samedi 8h-13h · Dimanche fermé"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="horairesTelephone">
+              Heures d'ouverture de la ligne téléphonique
+              <span class="field-tag field-tag--optional">Optionnel</span>
+            </label>
+            <p class="field-help">Si les horaires de la ligne téléphonique diffèrent de ceux de l'établissement.</p>
+            <textarea id="horairesTelephone" name="Horaires de la ligne téléphonique" placeholder="Laisser vide si identiques aux horaires de l'établissement"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="form-submit">
+          <i class="fas fa-paper-plane"></i>
+          <span>Envoyer les informations</span>
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- Footer sous branding Grosse-Tête Média (pas de coordonnées CDS Nyakira ici, page interne à l'agence). -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="gt-logo">
+        <img src="assets/logo-GT.png" alt="Grosse-Tête Média">
+        <span>© 2026 Grosse-Tête Média</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
