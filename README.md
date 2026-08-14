@@ -39,7 +39,7 @@ cds-nyakira/
 
 ## Contacts de la clinique
 
-- **Tél./WhatsApp** : 76 86 90 00 · 61 98 55 24  
+- **Tél./WhatsApp** : +257 79 56 57 28  
 - **Email** : cdsnyakira@gmail.com  
 - **Partenaire** : sept-bdi.org
 
